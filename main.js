@@ -76,10 +76,6 @@
  *
  */
 
-var resources = {
-    background: 'res/background.jpg'
-};
-
 cc.game.onStart = function () {
     var size = cc.view.getFrameSize();
     cc.view.enableRetina(false);

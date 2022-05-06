@@ -11,6 +11,7 @@
     "modules" : ["cocos2d"],
 
     "jsList" : [
+        "src/resources.js",
         "src/battlescene.js"
     ]
 }
