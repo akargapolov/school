@@ -22,7 +22,10 @@ var SolderView = cc.Node.extend({
     },
 
     onDie: function() {
-        this.animation.runAction(new cc.FadeOut(0.3));
+        this.animation.runAction(new cc.Sequence(
+            new cc.FadeOut(0.3),
+            new cc.ToggleVisibility()
+        ));
     },
 
     onAttack: function() {
@@ -36,8 +39,15 @@ var SolderView = cc.Node.extend({
 
     onTakeDamage: function () {
         this.animation.runAction(new cc.Sequence(
-            new cc.FadeTo(0.5, 140),
-            new cc.FadeTo(0.5, 255)
+            new cc.FadeTo(0.3, 140),
+            new cc.FadeTo(0.3, 255)
         ));
+
+        var damage = sp.SkeletonAnimation.create(resources.damage_json, resources.battle_atlas);
+        damage.setAnimation(0, "animation", false);
+        damage.setCompleteListener(function() {
+            damage.removeFromParent();
+        })
+        this.addChild(damage);
     }
 });

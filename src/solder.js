@@ -33,8 +33,13 @@ Solder.prototype.takeDamage = function (damage) {
 };
 
 Solder.prototype.attack = function (enemy) {
-    enemy.takeDamage(this.damage);
     this.onAttackAnimation();
+
+    setTimeout(function() {
+        if (this.isAlive()) {
+            enemy.takeDamage(this.damage);
+        }
+    }.bind(this), Solder.ATTACK_DURATION);
 };
 
 Solder.prototype.isAlive = function () {
@@ -52,3 +57,5 @@ Solder.GetSoldersAmount = function (type) {
 Solder.HP = 100;
 Solder.DAMAGE = [10, 20];
 Solder.ATTACK_INTERVAL = 1000;
+
+Solder.ATTACK_DURATION = 300;

@@ -15,6 +15,8 @@ var resources = {
     click_effect: 'res/sounds/click.mp3',
     heroes_music: 'res/sounds/heroes_music.mp3',
 
+    damage_json: 'res/battle_jsons/damage.json',
+
     solder1_json: 'res/jsons/wands_stage1.json',
     solder2_json: 'res/jsons/wands_stage2.json',
     solder3_json: 'res/jsons/wands_stage3.json',
