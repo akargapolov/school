@@ -12,6 +12,8 @@ var Battle = function () {
 Battle.prototype.start = function () {
     this.running = true;
 
+    console.log("Started!");
+
     this.interval = setInterval(this.run.bind(this), 100);
 };
 
@@ -33,6 +35,10 @@ Battle.prototype.run = function () {
 };
 
 Battle.prototype.stop = function () {
+    this.running = false;
+
+    console.log("Stopped!");
+
     clearInterval(this.interval);
 };
 

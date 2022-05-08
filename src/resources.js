@@ -17,6 +17,12 @@ var resources = {
 
     damage_json: 'res/battle_jsons/damage.json',
 
+    marvin_round: {
+        type: 'font',
+        name: 'marvin_round',
+        srcs: ['res/marvin_round.ttf']
+    },
+
     solder1_json: 'res/jsons/wands_stage1.json',
     solder2_json: 'res/jsons/wands_stage2.json',
     solder3_json: 'res/jsons/wands_stage3.json',

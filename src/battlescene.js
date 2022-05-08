@@ -3,7 +3,7 @@
  */
 
 var BattleScene = cc.Scene.extend({
-    ctor: function() {
+    ctor: function () {
         this._super();
 
         this.battle = new Battle();
@@ -24,7 +24,7 @@ var BattleScene = cc.Scene.extend({
         cc.audioEngine.setMusicVolume(0.5);
     },
 
-    addBackground: function() {
+    addBackground: function () {
         var background = new cc.Sprite(resources.background);
         background.setScale(Math.max(this.width / background.width, this.height / background.height));
         background.setPosition(this.width / 2, this.height / 2);
@@ -32,17 +32,26 @@ var BattleScene = cc.Scene.extend({
         this.addChild(background);
     },
 
-    addAttackButton: function() {
+    addAttackButton: function () {
         var buttonSize = cc.spriteFrameCache.getSpriteFrame('button.png').getOriginalSize();
         this.attackButton = new ccui.Button('#button.png', '#button_on.png', '#button_off   .png', ccui.Widget.PLIST_TEXTURE);
         this.attackButton.setScale9Enabled(true);
-        this.attackButton.setContentSize(200, 80);
+        this.attackButton.setContentSize(180, 70);
         this.attackButton.setCapInsets(cc.rect(buttonSize.width / 2 - 1, buttonSize.height / 2 - 1, 2, 2));
         this.attackButton.setPosition(this.width / 2, this.height / 2 - this.height / 3);
         this.addChild(this.attackButton);
 
         this.attackButton.setTitleText("ATTACK");
-        this.attackButton.setTitleFontSize(40);
-        this.attackButton.setTitleFontName("");
+        this.attackButton.setTitleFontSize(35);
+        this.attackButton.setTitleFontName(resources.marvin_round.name);
+
+        this.attackButton.addClickEventListener(function () {
+            if (!this.battle.running) {
+                console.log("wait start");
+                return;
+            }
+
+            this.battle.solder.attack(this.battle.enemy);
+        }.bind(this));
     }
 });

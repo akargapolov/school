@@ -15,6 +15,8 @@ var Solder = function (type) {
     };
     this.onTakeDamageAnimation = function () {
     };
+
+    this.attackTime = 0;
 };
 
 Solder.prototype.takeDamage = function (damage) {
@@ -33,6 +35,14 @@ Solder.prototype.takeDamage = function (damage) {
 };
 
 Solder.prototype.attack = function (enemy) {
+    var waitTime = this.attackTime + Solder.ATTACK_INTERVAL - Date.now();
+    if (waitTime > 0) {
+        console.log("attack wait " + waitTime + "ms");
+        return;
+    }
+
+    this.attackTime = Date.now();
+
     this.onAttackAnimation();
 
     setTimeout(function() {
