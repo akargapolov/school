@@ -84,6 +84,8 @@ cc.game.onStart = function () {
     cc.view.resizeWithBrowserSize(true);
 
     cc.LoaderScene.preload(Object.values(resources), function () {
+        cc.spriteFrameCache.addSpriteFrames(resources.battle_plist);
+
         cc.director.runScene(new BattleScene());
     }, this);
 };
