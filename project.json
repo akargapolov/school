@@ -8,10 +8,13 @@
     "renderMode" : 0,
     "engineDir":"cocos2d-html5",
 
-    "modules" : ["cocos2d"],
+    "modules" : ["cocos2d", "spine"],
 
     "jsList" : [
         "src/resources.js",
-        "src/battlescene.js"
+        "src/battlescene.js",
+        "src/battle.js",
+        "src/solder.js",
+        "src/solderview.js"
     ]
 }

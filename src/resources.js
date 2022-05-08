@@ -9,7 +9,7 @@ var resources = {
     battle_atlas: 'res/battle.atlas',
     battle_png: 'res/battle.png',
 
-    battle_ent_effect: 'res/sounds/battle_ent.mp3',
+    battle_enemy_effect: 'res/sounds/battle_enemy.mp3',
     battle_hit_effect: 'res/sounds/battle_hit.mp3',
     battle_music: 'res/sounds/battle_music.mp3',
     click_effect: 'res/sounds/click.mp3',
@@ -22,19 +22,19 @@ var resources = {
     solder5_json: 'res/jsons/wands_stage5.json',
     solder6_json: 'res/jsons/wands_stage6.json',
 
-    wood_ent1_json: 'res/jsons/woodsource_stage2.json',
-    wood_ent2_json: 'res/jsons/woodsource_stage4.json',
-    wood_ent3_json: 'res/jsons/woodsource_stage6.json',
+    enemy1_json: 'res/jsons/woodsource_stage2.json',
+    enemy2_json: 'res/jsons/woodsource_stage4.json',
+    enemy3_json: 'res/jsons/woodsource_stage6.json',
 
-    stone_ent1_json: 'res/jsons/stonesource_stage2.json',
-    stone_ent2_json: 'res/jsons/stonesource_stage4.json',
-    stone_ent3_json: 'res/jsons/stonesource_stage6.json',
+    enemy4_json: 'res/jsons/stonesource_stage2.json',
+    enemy5_json: 'res/jsons/stonesource_stage4.json',
+    enemy6_json: 'res/jsons/stonesource_stage6.json',
 
-    wagon_ent1_json: 'res/jsons/wagonsource_stage2.json',
-    wagon_ent2_json: 'res/jsons/wagonsource_stage4.json',
-    wagon_ent3_json: 'res/jsons/wagonsource_stage6.json',
+    enemy7_json: 'res/jsons/wagonsource_stage2.json',
+    enemy8_json: 'res/jsons/wagonsource_stage4.json',
+    enemy9_json: 'res/jsons/wagonsource_stage6.json',
 
-    bamboo_ent1_json: 'res/jsons/bamboosource_stage2.json',
-    bamboo_ent2_json: 'res/jsons/bamboosource_stage4.json',
-    bamboo_ent3_json: 'res/jsons/bamboosource_stage6.json'
+    enemy10_json: 'res/jsons/bamboosource_stage2.json',
+    enemy11_json: 'res/jsons/bamboosource_stage4.json',
+    enemy12_json: 'res/jsons/bamboosource_stage6.json'
 };
