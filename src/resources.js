@@ -10,7 +10,7 @@ var resources = {
     battle_png: 'res/battle.png',
 
     battle_enemy_effect: 'res/sounds/battle_enemy.mp3',
-    battle_hit_effect: 'res/sounds/battle_hit.mp3',
+    battle_solder_effect: 'res/sounds/battle_hit.mp3',
     battle_music: 'res/sounds/battle_music.mp3',
     click_effect: 'res/sounds/click.mp3',
     heroes_music: 'res/sounds/heroes_music.mp3',

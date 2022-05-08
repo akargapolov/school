@@ -10,7 +10,6 @@ var BattleScene = cc.Scene.extend({
 
         this.solderView = new SolderView(this.battle.solder);
         this.solderView.setPosition(this.width / 2 - this.width / 6, this.height / 2);
-        this.solderView.setScaleX(-1);
         this.addChild(this.solderView);
 
         this.enemyView = new SolderView(this.battle.enemy);

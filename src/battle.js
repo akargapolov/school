@@ -6,7 +6,7 @@ var Battle = function () {
     this.solder = new Solder('solder');
     this.enemy = new Solder('enemy');
 
-    setTimeout(this.start.bind(this), 5000);
+    setTimeout(this.start.bind(this), 3000);
 };
 
 Battle.prototype.start = function () {

@@ -23,6 +23,8 @@ Solder.prototype.takeDamage = function (damage) {
         this.hp = 0;
     }
 
+    console.log(this.type + ' takeDamage, hp - ' + this.hp);
+
     if (this.isAlive()) {
         this.onTakeDamageAnimation();
     } else {
