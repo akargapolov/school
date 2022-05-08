@@ -34,7 +34,7 @@ var BattleScene = cc.Scene.extend({
 
     addAttackButton: function () {
         var buttonSize = cc.spriteFrameCache.getSpriteFrame('button.png').getOriginalSize();
-        this.attackButton = new ccui.Button('#button.png', '#button_on.png', '#button_off   .png', ccui.Widget.PLIST_TEXTURE);
+        this.attackButton = new ccui.Button('#button.png', '#button_on.png', '#button_off.png', ccui.Widget.PLIST_TEXTURE);
         this.attackButton.setScale9Enabled(true);
         this.attackButton.setContentSize(180, 70);
         this.attackButton.setCapInsets(cc.rect(buttonSize.width / 2 - 1, buttonSize.height / 2 - 1, 2, 2));
