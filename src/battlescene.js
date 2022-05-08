@@ -18,6 +18,9 @@ var BattleScene = cc.Scene.extend({
         this.addChild(this.enemyView);
 
         this.addBackground();
+
+        cc.audioEngine.playMusic(resources.battle_music, true);
+        cc.audioEngine.setMusicVolume(0.7);
     },
 
     addBackground: function() {
