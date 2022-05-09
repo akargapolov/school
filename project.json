@@ -6,6 +6,7 @@
     "frameRate" : 60,
     "id" : "gameCanvas",
     "renderMode" : 0,
+    "noCache": true,
     "engineDir":"cocos2d-html5",
 
     "modules" : ["cocos2d", "spine", "ccui"],
