@@ -1,4 +1,3 @@
-# schoolgamedev
 
 Задание к занятию Cocos 2d:
 
